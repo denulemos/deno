@@ -1,8 +1,10 @@
 let heroId = 1;
+//Generar ID del heroe
 function genHeroId(): number {
-    return heroId++;
+    return heroId++; //Incrementamos el ID a medida que vamos creando heroes
 }
 
+//Heroe tiene un id y un nombre
 export class Hero {
     id: number;
     name: string;

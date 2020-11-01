@@ -1,10 +1,15 @@
 import type { HandlerFunc } from "https://deno.land/x/abc/mod.ts";
 import { Hero, IHero } from "./hero.ts";
 
+//array de heroes y lo inicializamos vacio
 let heroes: Hero[] = [];
 
+//Manejamos todas las peticiones a nuestro servidor 
+
+//Traemos a todos los heroes
 export const findAll: HandlerFunc = () => heroes;
 
+//Buscamos al heroe por ID pasado por params
 export const findOne: HandlerFunc = (c) => {
     const { id } = c.params as { id: string };
     return heroes.find((hero) => hero.id.toString() === id);

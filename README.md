@@ -61,5 +61,6 @@ $cargo install deno
    Para correr este proyecto necesitamos correr un `deno run --unstable --allow-net index.ts` para permitirle acceder a la net.
 4. Consumir una API externa con Fetch. Lo llamamos de la siguiente manera pasando al servicio como argumento `deno run --allow-net=jsonplaceholder.typicode.com index.ts https://jsonplacerholder.typicode.com/todos/1` definimos el Host al cual queremos dar acceso.
 5. Uso de variables de entorno en Deno. Para ejecutar debemos dar permisos de lectura y permisos a las variables de entorno `deno run --allow-read --allow-env index.ts`
-6. Cronjobs en Deno, es decir, tareas programadas, se usa para llevar a cabo tareas periodicas (Como chequear en la base de datos que el usuario expiró por ejemplo) `deno run --allow-write index.ts`, en este proyecto creamos un archivo por minuto. 
-
+6. Cronjobs en Deno, es decir, tareas programadas, se usa para llevar a cabo tareas periodicas (Como chequear en la base de datos que el usuario expiró por ejemplo) `deno run --allow-write index.ts`, en este proyecto creamos un archivo por minuto.
+7. Un pequeño CRUD hecho en Deno, de Heroes, handlea todas las peticiones HTTP posibles a nuestro servidor Deno.
+8. Leer archivos con Deno. Hay un pequeño archivo para consumir la API en postman.
